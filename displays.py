@@ -57,7 +57,7 @@ def draw_loss_error_curves(epochs):
     test_loss_plot, = pylab.plot(bins, loss_errors[:, 2])
 
     pylab.xlabel('Epochs')
-    pylab.ylabel('Loss error rate')
-    pylab.title('Loss error for train, valid and test sets')
+    pylab.ylabel('Loss rate')
+    pylab.title('Loss for train, valid and test sets')
     pylab.legend([train_loss_plot, valid_loss_plot, test_loss_plot], ['Train set', 'Valid set', 'Test set'])
     pylab.show()
